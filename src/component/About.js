@@ -15,13 +15,15 @@ import "../App.css"
 const About = () => {
   return (
     <div className="" id="about">
-      <div className="text-7xl pt-10 bg-violet-700 text-center font-sri-font skills text-white">
+      <div className="text-7xl
+       pt-10 bg-violet-700 text-center
+        font-sri-font skills text-white">
         Skills
       </div>
       <div
         className="
          bg-violet-700 grid pt-10 pb-10
-          lg:grid-cols-2 sm:p-2
+          lg:grid-cols-2 
           skills    ">
         <div className=" left_slide flex flex-col justify-center items-center pb-10 ">
           <img src={about} className="w-2/5 sm:w-3/4" alt="cell" />
@@ -55,14 +57,17 @@ const About = () => {
                   <span className="text-4xl text-white"> Redux </span>
                   for state management and have used GitHub extensively for version control.
                   My UI design skills are enhanced by my knowledge of
-                  <span className="text-4xl text-white">   Tailwind CSS and Material-UI. </span>
+                  <span className="text-4xl text-yellow-400">   Tailwind CSS and Material-UI. </span>
                 </p>
               </li>
             </ul>
           </div>
         </div>
         <div className=" right_slide flex flex-col justify-center items-center grid-skills">
-          <div className="grid grid-cols-3  gap-7 text-white  font-sri-font sm:mt-10 sm:mb-10 sm:pb-7 "
+          <div
+            className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 gap-5  lg:gap-7
+           text-white  font-sri-font sm:mt-10
+            sm:mb-10 sm:pb-7 "
           >
             <div class="circle-skill round-style">
               <BsFiletypeHtml class="w-12 h-12 ml-5" />

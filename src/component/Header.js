@@ -9,9 +9,10 @@ const Header = () => {
     <div>
       <div className="flex justify-between px-5 py-5  font-sri-font bg-secondary"
         onClick={() => sethrefggle(!hrefggle)} >
-        <div className="font-bold text-4xl text-white hover:text-yellow-300 "><SiReactivex size={"50px"} className="inline mr-3 " /> Anandan</div>
+        <div className="lg:font-bold lg:text-4xl  text-white hover:text-yellow-300 ">
+          <SiReactivex size={"50px"} className="inline mr-3 sm:w-[40px] " /> Anandan</div>
         <nav className="header_section mt-2">
-          <ul className="flex text-white sm:hidden md:flex text-2xl">
+          <ul className="flex text-white hidden md:flex text-xl">
             <li >
               {" "}
               <a
@@ -59,7 +60,7 @@ const Header = () => {
           </nav>
         )}
         <button onClick={() => sethrefggle(!hrefggle)} className="block md:hidden">
-          <RxHamburgerMenu size={25} />
+          <RxHamburgerMenu size={35} />
         </button>
       </div>
     </div>

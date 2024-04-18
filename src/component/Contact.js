@@ -27,36 +27,28 @@ const Contact = () => {
 
     return (
         <div id="contact">
-            <div className='grid lg:grid-cols-2  sm:grid-cols-1 bg_change bg-no-repeat font-sri-font contact'>
-                <div className=' text-white text-center '>
-                    <div className='m-[100px] rounded-[20px] bg-violet-700 p-[50px]'>
-                        <div className="text-6xl font-bold p-5 ">Contact</div>
-                        <div className="flex justify-between lg:mt-10">
-                            <p className="lg:text-xl sm:text-[16px]">
-                                <BsEnvelope size={"40px"} className='inline sm:w-[20px]' />&nbsp;   Email   </p>
-                            <p className="lg:text-xl sm:text-[16px]"  > anandansmart50@gmail.com </p>
+            <div className='grid lg:grid-cols-2 grid-cols-1 bg_change bg-no-repeat font-sri-font contact'>
+                <div className='flex flex-col justify-center items-center  '>
+                    <div className='bg-violet-700
+ border-none rounded-lg mt-10 text-white p-3 lg:p-10
+                    '>
+                        <div className="lg:text-6xl text-2xl text-center font-bold p-5 ">Contact</div>
+                        <div className='flex justify-between p-3 text-xl '>
+                            <BsEnvelope className='w-6 h-6 mr-2' />  anandansmart50@gmail.com
                         </div>
-                        <div className="flex justify-between lg:mt-10">
-                            <p className="lg:text-xl sm:text-[16px]">
-                                <BsFillTelephoneFill
-                                    size={"40px"} className='inline sm:w-[20px]'
-                                />
-                                &nbsp; Phone </p>
-                            <p className="lg:text-xl sm:text-[16px]"  > +91 63690 64563</p>
+                        <div className='flex justify-between p-3 text-xl' >
+                            <BsFillTelephoneFill className='w-6 h-6 mr-2' />
+                            +91 63690 64563
                         </div>
-                        <div className="flex justify-between  lg:mt-10 mb-10">
-                            <p className="lg:text-xl sm:text-[16px]">
-                                <LiaAddressCardSolid
-                                    className='inline sm:w-[20px]'
-                                />  &nbsp;
-                                Address   </p>
-                            <p className="lg:text-xl sm:text-[16px]"  >  73/139, EBP Nagar, Erode </p>
+                        <div className='flex justify-between p-3 text-xl'>
+                            <LiaAddressCardSolid className='w-7 h-7 mr-2' />
+                            Address : 73/139, EBP Nagar, Erode
                         </div>
                     </div>
                 </div>
                 <div className=''>
-                    <form ref={form} onSubmit={sendEmail} className='flex flex-col space_center m-[100px]'>
-                        <label className='text-3xl font-bold'>Name</label>
+                    <form ref={form} onSubmit={sendEmail} className='flex flex-col space_center lg:m-[100px] m-7'>
+                        <label className='text-3xl font-bold lg:text-white'>Name</label>
                         <input
                             type="text"
                             name="user_name"

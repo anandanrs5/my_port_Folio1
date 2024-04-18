@@ -6,26 +6,24 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { GrLinkedin } from "react-icons/gr";
 import "../App.css";
 import { FaFilePdf } from 'react-icons/fa';
-import resumePdf from '../assets/my_resume.pdf';
+import resumePdf from '../assets/resume.pdf';
+
 
 const Profile = () => {
   return (
-    <div className="profile-container" id="profile">
+    <div className="profile" id="profile">
       <div className="grid lg:grid-cols-2 bg-violet-300 py-5 ">
         <div
-          className="profile-info flex flex-col 
-          justify-center items-center py-5
+          className="flex flex-col profile-left
+          justify-center items-center py-5 px-10
           m-10">
           <div className="animated-info">
-            <h1 className="text-white 
-             lg:text-6xl sm:text-5xl xs:text-4xl
-              font-sri-font sm:text-start">
-              Hi,
-              <br />
-              I'm <span className="text-blue-700 select-none px-10"> Anandan</span>
-              <p className="text-5xl">MERN Stack Developer</p>
-            </h1>
-            <div className="social-icons flex py-5 ">
+            <div className="text-4xl lg:text-5xl text-white  font-sri-font">
+              <div className="">Hi,</div>
+              <div>I'm  <span className="text-blue-700">Anandan</span></div>
+              <div>MERN Stack Developer</div>
+            </div>
+            <div className="social-icons lg:flex py-5 ">
               <a href="https://twitter.com/home">
                 <FaXTwitter className="pr-3 hover:text-white" size={70} />
               </a>
@@ -33,15 +31,17 @@ const Profile = () => {
                 <FaFacebook className="pr-3 hover:text-green-500" size={70} />
               </a>
               <a href="https://www.instagram.com/">
-                <FaInstagramSquare className="pr-3 hover:text-rose-800" size={70}
+                <FaInstagramSquare className="pr-3 hover:text-yellow-300" size={70}
                 />
               </a>
               <a href="https://www.linkedin.com/in/anandan-r-32488b194/">
                 <GrLinkedin className="pr-3 hover:text-blue-700" size={70}
                 />
               </a>
-              <a href={resumePdf} target="_blank" rel="noopener noreferrer" className="inline-block bg-black hover:bg-red-600 text-white font-bold py-2 px-4 text-2xl rounded-lg shadow-lg transition duration-300 ease-in-out mr-4 pt-4 ">
-                <FaFilePdf className="inline-block mr-2 text-2xl" /> resume
+              <a href={resumePdf} target="_blank" rel="noopener noreferrer"
+                className="inline-block bg-black hover:bg-red-600 text-white font-bold py-2 
+                px-4 text-2xl rounded-md  mr-4 pt-4 ">
+                <FaFilePdf size={"20px"} className="inline-block mr-2 text-2xl" /> resume
               </a>
             </div>
           </div>

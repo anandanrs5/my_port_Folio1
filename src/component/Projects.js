@@ -8,7 +8,7 @@ import BigTreasure from "../assets/bigtreasure.png";
 const Projects = () => {
   return (
     <div className="" id="projects">
-      <div className="text-7xl p-10 bg-violet-300 text-center font-sri-font  text-blue-800">
+      <div className="text-6xl p-10 bg-violet-300 text-center font-sri-font  text-blue-800">
         My Projects
       </div>
       <div className="flex flex-row flex-wrap md:flex-col lg:flex-row project
